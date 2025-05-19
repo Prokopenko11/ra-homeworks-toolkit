@@ -1,0 +1,288 @@
+body {
+  background-color: #323232;
+  margin: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App {
+  width: 95%;
+  margin: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+
+  list-style-type: none;
+}
+
+.preloader {
+  margin: 20px auto;
+  width: 40px;
+  height: 40px;
+  border: 4px solid #ccc;
+  border-top: 4px solid #E3B616;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.menu {
+  display: flex;
+  margin-bottom: 25px;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
+  background: #323232;
+}
+
+.menu__item {
+  position: relative;
+  flex-grow: 1;
+  text-align: center;
+  line-height: 3rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: .6;
+  border-bottom-width: .2rem;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+}
+
+.menu__item:hover {
+  opacity: 1;
+  border-bottom-color: hsl(0, 0%, 100%);
+}
+
+.menu__item-active,
+.menu__item-active:hover {
+  opacity: 1;
+  border-bottom-color: #E3B616;
+}
+
+.search-movie-wrapper {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.search-movie-input {
+  width: 60%;
+  padding: 10px;
+
+  font-size: 16px;
+
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: #323232;
+}
+
+.search-movie-input:focus {
+  border: 1px solid #E3B616;
+  outline: 2px solid #E3B616;
+}
+
+.search-button {
+  width: 45px;
+
+  border-radius: 5px;
+  border: 1px solid #E3B616;
+  background-color: #E3B616;
+  background-image: url('./images/search-button.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 0;
+}
+
+.search-button:hover {
+  background-color: #cba312;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.movie-list-item {
+  width: 17%;
+}
+
+.movie-card-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.movie-card-wrapper {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.show-details-button {
+  width: 100%;
+  background-color: #E3B616;
+  border: none;
+  padding: 15px;
+  color: #323232;
+  border-radius: 0 0 10px 10px;
+}
+
+.show-details-button:hover {
+  background-color: #cba312;
+  cursor: pointer;
+}
+
+.movie-card-title {
+  margin: 0;
+  width: 70%;
+  color: #323232;
+  font-size: 16px;
+}
+
+.heart {
+  width: 25px;
+  height: 25px;
+  background-image: url('../src/images/grey-heart-icon.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heart:hover {
+  cursor: pointer;
+}
+
+.heart.active {
+  background-image: url('../src/images/yellow-heart-icon.png');
+}
+
+@media (max-width: 1300px) {
+  .movie-list-item {
+    width: 22%;
+  }
+
+  .movie-card-image {
+    height: 320px;
+  }
+}
+
+@media (max-width: 800px) {
+  .movie-list-item {
+    width: 30%;
+  }
+
+  .movie-card-image {
+    height: 300px;
+  }
+}
+
+.favorite-error {
+  color: #fff;
+}
+
+.movie-list__favorite {
+  justify-content: start;
+}
+
+.movie-details-card {
+  width: 70%;
+  margin: auto;
+  background-color: rgb(26, 26, 26);
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+
+  color: white;
+}
+
+.movie-details-title {
+  margin-bottom: 4px;
+  font-size: 28px;
+}
+
+.movie-details-wrapper {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+
+  text-decoration: underline;
+  text-decoration-color: #E3B616;
+  font-size: 16px;
+}
+
+.genre-list {
+  display: flex;
+  gap: 20px;
+}
+
+.genre-list-item {
+  padding: 10px;
+  border: 1px solid #E3B616;
+  border-radius: 30px;
+}
+
+.movie-director-span, .actors-list-span, .movie-rating-span {
+  position: relative;
+  margin-right: 20px;
+  text-transform: uppercase;
+
+  color: #E3B616;
+}
+
+.movie-rating-span::after {
+  content: '';
+  position: absolute;
+  right: -17px;
+  top: -1px;
+
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-image: url('./images/star.png');
+  background-size: contain;
+}
+
+.actors-list {
+  display: flex;
+  gap: 10px;
+}
+
+.movie-rating-span {
+  margin-right: 35px;
+}
