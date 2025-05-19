@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.ccc28463.css",
-    "main.js": "/static/js/main.de543f54.js",
-    "static/js/453.d850772c.chunk.js": "/static/js/453.d850772c.chunk.js",
-    "index.html": "/index.html",
-    "main.ccc28463.css.map": "/static/css/main.ccc28463.css.map",
-    "main.de543f54.js.map": "/static/js/main.de543f54.js.map",
-    "453.d850772c.chunk.js.map": "/static/js/453.d850772c.chunk.js.map"
+    "main.css": "/ra-homeworks-toolkit/static/css/main.ccc28463.css",
+    "main.js": "/ra-homeworks-toolkit/static/js/main.ecbc0723.js",
+    "static/js/453.d850772c.chunk.js": "/ra-homeworks-toolkit/static/js/453.d850772c.chunk.js",
+    "index.html": "/ra-homeworks-toolkit/index.html",
+    "main.ccc28463.css.map": "/ra-homeworks-toolkit/static/css/main.ccc28463.css.map",
+    "main.ecbc0723.js.map": "/ra-homeworks-toolkit/static/js/main.ecbc0723.js.map",
+    "453.d850772c.chunk.js.map": "/ra-homeworks-toolkit/static/js/453.d850772c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ccc28463.css",
-    "static/js/main.de543f54.js"
+    "static/js/main.ecbc0723.js"
   ]
 }
