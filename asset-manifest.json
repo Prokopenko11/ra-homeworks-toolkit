@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ra-homeworks-toolkit/static/css/main.ccc28463.css",
-    "main.js": "/ra-homeworks-toolkit/static/js/main.ecbc0723.js",
+    "main.js": "/ra-homeworks-toolkit/static/js/main.cd94e3af.js",
     "static/js/453.d850772c.chunk.js": "/ra-homeworks-toolkit/static/js/453.d850772c.chunk.js",
     "index.html": "/ra-homeworks-toolkit/index.html",
     "main.ccc28463.css.map": "/ra-homeworks-toolkit/static/css/main.ccc28463.css.map",
-    "main.ecbc0723.js.map": "/ra-homeworks-toolkit/static/js/main.ecbc0723.js.map",
+    "main.cd94e3af.js.map": "/ra-homeworks-toolkit/static/js/main.cd94e3af.js.map",
     "453.d850772c.chunk.js.map": "/ra-homeworks-toolkit/static/js/453.d850772c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ccc28463.css",
-    "static/js/main.ecbc0723.js"
+    "static/js/main.cd94e3af.js"
   ]
 }
